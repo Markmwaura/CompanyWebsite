@@ -1,6 +1,9 @@
 function focusOnElement(element_id) {
 
-    goToByScroll(element_id);
+    setTimeout(function(){
+        goToByScroll(element_id);
+    },400);
+
 }
 function goToByScroll(id){
 

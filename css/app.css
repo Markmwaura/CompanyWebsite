@@ -27,3 +27,20 @@ font-size:19px;
 font-size:19px;
 
 }
+.navmenu{
+    height: 2%;
+}
+.topbackg{
+justify-content: center;
+text-align: center;
+position: absolute;
+margin:auto;
+font-size: 64px;
+color: #fff;
+}
+.tophome{
+
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
