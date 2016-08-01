@@ -31,16 +31,50 @@ font-size:19px;
     height: 2%;
 }
 .topbackg{
-justify-content: center;
-text-align: center;
-position: absolute;
 margin:auto;
 font-size: 64px;
 color: #fff;
+justify-content: center;
+text-align: center;
+position: absolute;
+
+vertical-align: middle;
+z-index: 2000;
 }
 .tophome{
 
     width: 100%;
     height: 100%;
-    vertical-align: middle;
+}
+.toptext{
+position: absolute;
+width: 100%;
+text-align: center;
+vertical-align: middle;
+color: #fff;
+font-size: 44px;
+letter-spacing: 2.5px;
+line-height: 4.9px;
+opacity: 1;
+
+}
+.toptext h1{
+
+    padding-top: 250px;
+    color: #fff;
+    font-size: 72px;;
+    letter-spacing: 2.5px;
+    line-height: 5.9px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: light-blue;
+
+}
+.toppart{
+position: relative;
+vertical-align: middle;
+align-content: center;
+justify-content: center;
+margin: auto;
+
 }
