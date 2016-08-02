@@ -10,3 +10,7 @@ function goToByScroll(id){
     $('html,body').animate({
         scrollTop: $("#"+id).offset().top}, 'slow');
 }
+
+$("a#blog").on('click', function(){
+     window.location = "/contact.html";
+});
