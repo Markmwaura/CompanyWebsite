@@ -79,11 +79,12 @@ margin: auto;
 
 }
 .teamimg{
-height: 300px;
-width: 100%;
+  height: 400px;
 }
 .gridset{
+height: 500px;
+}
+body{
 
-
-
+  
 }
