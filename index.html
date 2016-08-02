@@ -19,6 +19,12 @@
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/linemenu/demo.css">
         <link rel="stylesheet" href="css/linemenu/component.css">
+
+
+        <link rel="stylesheet" type="text/css" href="css/shapehover/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/shapehover/component.css" />
+        <script src="js/shapehover/snap.svg-min.js"></script>
+
             <link rel="stylesheet" href="css/app.css">
         <!-- Resource style -->
         <script src="js/modernizr.js"></script>
@@ -67,16 +73,11 @@
 
             <div class="row">
                 <section id="about" data-magellan-target="about">
-                    <h3>About section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
+                    </section>
 
-                <section id="members" data-magellan-target="members">
+                <section id="members  " data-magellan-target="members" >
                         <h3>Team section</h3>
-                    <div class="large-4 columns" >
-                        <img src="img/team/teamone.jpg" alt="" class="teamimg" />
-                    </div>
+
                     <div class="large-4 columns" >
                         <img src="img/team/teamtwo.jpg" alt="" class="teamimg"/>
                     </div>
@@ -91,10 +92,7 @@
                     pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
                     ornare, auctor est at, aliquet urna.</section>
                 <section id="contact" data-magellan-target="contact">
-                    <h3>Contact section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
+                    <img src="img/6.jpg" class="tophome" alt=""/></section>
             </div>
 
         </section>
@@ -108,6 +106,34 @@
         <script src="js/linemenu/classie.js"></script>
         <script src="js/linemenu/clipboard.min.js"></script>
         <script src="js/linemenu/linemenu.js"></script>
+        <script>
+            (function() {
+
+                function init() {
+                    var speed = 300,
+                        easing = mina.backout;
+
+                    [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+                        var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                            pathConfig = {
+                                from : path.attr( 'd' ),
+                                to : el.getAttribute( 'data-path-hover' )
+                            };
+
+                        el.addEventListener( 'mouseenter', function() {
+                            path.animate( { 'path' : pathConfig.to }, speed, easing );
+                        } );
+
+                        el.addEventListener( 'mouseleave', function() {
+                            path.animate( { 'path' : pathConfig.from }, speed, easing );
+                        } );
+                    } );
+                }
+
+                init();
+
+            })();
+        </script>
 
         <!-- Resource jQuery -->
     </body>
