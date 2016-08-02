@@ -12,5 +12,8 @@ function goToByScroll(id){
 }
 
 $("a#blog").on('click', function(){
-     window.location = "/contact.html";
+     window.location = "file:///home/mark/Documents/work/CompanyWebsite/blog.html";
+});
+$("a#home").on('click', function(){
+     window.location = "file:///home/mark/Documents/work/CompanyWebsite/index.html";
 });

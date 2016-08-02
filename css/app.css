@@ -84,9 +84,7 @@ margin: auto;
 .gridset{
 height: 500px;
 }
-body{
-background-color: #f4f4f4;
-}
+
 .contact{
   padding-bottom: 5%;
 }
@@ -100,5 +98,16 @@ padding-bottom: 7%;
 
 }
 .team{
+
+}
+header a.hover{
+color: blue;
+
+}
+.menu--viola .menu__link:hover{
+color: #1E90FF;
+
+}
+body{
 
 }

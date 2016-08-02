@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/linemenu/demo.css">
         <link rel="stylesheet" href="css/linemenu/component.css">
+        <link rel="stylesheet" type="text/css" href="css/articleintro/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/articleintro/component.css" />
         <!-- Resource style -->
         <script src="js/modernizr.js"></script>
         <!-- Modernizr -->
@@ -27,60 +29,39 @@
         <title>Home - Company</title>
     </head>
     <body>
-        <nav class="menu menu menu--viola">
-            <ul class="horizontal menu menu__list" data-magellan>
 
-                <li class="menu__item menu__item--current">
-                    <a href="#" onclick="focusOnElement('home');" class="menu__link">Home</a>
-                </li>
+        <div id="container" class="container intro-effect-sidefixed">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
 
-                <li class="menu__item">
-                    <a href="#" onclick="focusOnElement('portfolio');" class="menu__link">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" onclick="focusOnElement('about');" class="menu__link">About</a>
-                </li>
-                <li class="menu__item">
-                    <a href="blog.html"  class="menu__link">Blog</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" onclick="focusOnElement('members');" class="menu__link">Members</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" onclick="focusOnElement('contact');" class="menu__link">Contact</a>
-                </li>
+			</div>
+			<header class="header">
+				<div class="bg-img"><img src="img/5.jpg" alt="Background Image" /></div>
+			</header>
+			<button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
+			<article class="content">
 
-            </ul>
-        </nav>
-        <section class="large-12 columns ">
-            <div class="sections">
-                <section id="home" data-magellan-target="home">First Section<h3>Home section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
-                <section id="about" data-magellan-target="about">
-                    <h3>About section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
-                <section id="members" data-magellan-target="members">
-                    <h3>members section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
-                <section id="portfolio" data-magellan-target="portfolio">
-                    <h3>Portfolio section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
-                <section id="contact" data-magellan-target="contact">
-                    <h3>Contact section</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis purus metus, sodales suscipit urna tristique id. Nulla ac posuere tellus, sit amet dapibus libero. Praesent ac turpis est. Proin et dignissim erat, eu interdum elit. Nullam ac
-                    pharetra erat. Sed velit sem, pharetra eget suscipit nec, posuere eu sem. Suspendisse imperdiet odio nec ex commodo efficitur. Sed quis urna fermentum, fringilla elit id, dictum tortor. Morbi rhoncus vehicula ex sed eleifend. Vestibulum nec eros
-                    ornare, auctor est at, aliquet urna.</section>
-            </div>
+                <div class="large-8 columns title">
 
-        </section>
+                    <nav class=" menu menu menu--viola navmenu">
+                        <ul class="horizontal menu menu__list" data-magellan>
+
+
+							<li class="menu__item menu__item--current">
+                                <a href="#home" id="home" class="menu__link">Home</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <h2 >Ruby Designs- Blog</h2>
+                </div>
+				<div>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</article>
+		</div><!-- /container -->
 
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>
@@ -91,6 +72,149 @@
         <script src="js/linemenu/classie.js"></script>
         <script src="js/linemenu/clipboard.min.js"></script>
         <script src="js/linemenu/linemenu.js"></script>
+        <script src="js/articleintro/classie.js"></script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed,
+					noscroll,
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+
+				function scrollPage() {
+					scrollVal = scrollY();
+
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 600 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+
+				disable_scroll();
+
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
 
         <!-- Resource jQuery -->
     </body>
